@@ -17,6 +17,7 @@ nav {
     background:#333;
     position: absolute;
     border-bottom: 1px solid orange;    
+    overflow: hidden;
     z-index: 9999;
 }
 
@@ -28,7 +29,14 @@ nav a {
     font-weight: 600;
     font-size: 18px;
     padding: 20px 20px;
+    text-align: center;
     z-index: 10;
+    transition: background-color 500ms;
+}
+
+nav a:hover {
+  background: #f1f1f1;
+  color: #333;
 }
 
 header {
@@ -48,6 +56,7 @@ header {
   background-position: center;
   background-attachment: fixed;
   color: #f2f2f2;
+  filter: blur(3px);
 }
 
 .header-text {
