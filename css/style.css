@@ -1,6 +1,11 @@
-body {
+body, html {
   padding: 0;
   margin: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 nav {
@@ -8,6 +13,7 @@ nav {
     background:#333;
     position: absolute;
     border-bottom: 1px solid orange;    
+    z-index: 9999;
 }
 
 nav a {
@@ -19,7 +25,12 @@ nav a {
     z-index: 10;
 }
 
-.container {
+header {
+  position: relative;
+  background-color: #000;
+}
+
+.header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(estate2.jpg);
   width: 100%;
@@ -30,18 +41,22 @@ nav a {
   color: #f2f2f2;
 }
 
-.header {
-  width: 50%;
-  margin: auto;
+.header-text {
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
   text-align: center;
-  padding-top: 240px;
+  padding: 20px;
 }
 
-.header h1 {
+.header-text h1 {
   font-size: 50px;
 }
 
-.header button {
+.header-text button {
   padding: 10px 25px;
   border: 0;
   border-radius: 10px;
