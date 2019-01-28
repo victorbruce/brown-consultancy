@@ -5,13 +5,14 @@
 
 @font-face {
   font-family: helvetica-light;
-  src: url(fonts/Helvetica-Light.ttf)
+  src: url(fonts/Helvetica-Light.ttf);
 }
 
 /******************
   General Style
 ******************/
-body, html {
+body,
+html {
   padding: 0;
   margin: 0;
   height: 100%;
@@ -25,7 +26,12 @@ body, html {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: acta-display-light;
 }
 
@@ -38,29 +44,49 @@ section {
   padding: 30px 0px;
 }
 
+section h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+section h2:after {
+  content: " ";
+  display: block;
+  height: 2px;
+  background: orange;
+  width: 100px;
+  margin: 15px auto;
+}
+
+section div p {
+  font-size: 18px;
+}
+
 /******************
   Nav Style
 ******************/
 nav {
-    width: 100%;
-    background:#333;
-    position: absolute;
-    border-bottom: 1px solid orange;    
-    overflow: hidden;
-    z-index: 9999;
+  width: 100%;
+  background: #333;
+  position: absolute;
+  border-bottom: 1px solid orange;
+  overflow: hidden;
+  z-index: 9999;
 }
 
 nav a {
-    text-decoration: none;
-    display: inline-block;
-    color: #f2f2f2;
-    font-family: acta-display-light;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 20px 20px;
-    text-align: center;
-    z-index: 10;
-    transition: background-color 500ms;
+  text-decoration: none;
+  display: inline-block;
+  color: #f2f2f2;
+  font-family: acta-display-light;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 20px 20px;
+  text-align: center;
+  z-index: 10;
+  transition: background-color 500ms;
 }
 
 nav a:hover {
@@ -93,7 +119,7 @@ header {
 
 .header-text {
   width: 60%;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -125,21 +151,71 @@ header {
   text-align: center;
 }
 
-.what-we-do h2 {
-  font-size: 40px;
-  text-transform: capitalize;
-  letter-spacing: 4px;
+/******************
+  Projects Style
+******************/
+.our-projects {
+  background: #f1f1f1;
+}
+.our-projects h2 {
+  text-align: center;
 }
 
-.what-we-do h2:after {
-  content: " ";
-  display: block;
-  height: 2px;
+.project-image-view {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.project-images {
+  flex: 30%;
+  padding: 0 4px;
+}
+
+.project-images img {
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/******************
+  Contact us Style
+******************/
+.contact-us {
+  background: #fff;
+}
+
+.contact-us img {
+  width: 100%;
+  height: auto;
+}
+
+.column {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
   background: orange;
-  width: 100px;
-  margin: 15px auto;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 300ms;
 }
 
-.what-we-do div p {
-  font-size: 18px;
+input[type=submit]:hover {
+  background-color: #45a049;
 }
