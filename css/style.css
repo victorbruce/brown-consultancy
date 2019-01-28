@@ -197,6 +197,12 @@ header {
   padding: 20px;
 }
 
+.contact-us div:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
 input[type="text"],
 textarea {
   width: 100%;
@@ -207,7 +213,7 @@ textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background: orange;
   color: #fff;
   padding: 12px 20px;
@@ -216,6 +222,56 @@ input[type=submit] {
   transition: background-color 300ms;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+/**********************
+  Footer style
+**********************/
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0px;
+  border-top: 1px solid orange;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  section div p {
+    font-size: 16px;
+  }
+
+  .what-we-do {
+    text-align: justify;
+  }
+
+  .header-text {
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .header-text h1 {
+    font-size: 30px;
+  }
+
+  .header-text button {
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .column, input[type=submit] {
+    width: 100%;
+    float: none;
+  }
 }
