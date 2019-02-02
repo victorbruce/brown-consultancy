@@ -64,6 +64,19 @@ section div p {
   font-size: 18px;
 }
 
+section.about,
+section.projects,
+section.contact {
+  margin-top: 68px;
+}
+
+.under-construction {
+  text-align: center;
+  color: #777;
+  font-weight: bold;
+  font-size: 22px;
+}
+
 /******************
   Nav Style
 ******************/
@@ -232,11 +245,7 @@ input[type="submit"]:hover {
 /**********************
   ABOUT PAGE
 **********************/
-section.about {
-  position: relative;
-  top: 68px;
-  left: 0;
-}
+
 
 /**********************
   Footer style
