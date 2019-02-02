@@ -70,7 +70,10 @@ section div p {
 nav {
   width: 100%;
   background: #333;
-  position: absolute;
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
   border-bottom: 1px solid orange;
   overflow: hidden;
   z-index: 9999;
@@ -224,6 +227,15 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+/**********************
+  ABOUT PAGE
+**********************/
+section.about {
+  position: relative;
+  top: 68px;
+  left: 0;
 }
 
 /**********************
