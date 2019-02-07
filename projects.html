@@ -9,14 +9,18 @@
     <title>Brown's Real Estate Consultancy</title>
   </head>
   <body>
-    <nav>
-        <a href="index.html">Browns' Consultancy</a>
-        <a href="index.html">Home</a> <a href="projects.html">Projects</a
-        ><a href="about.html">About</a><a href="contact-us.html">Contact</a>
-      </nav>
-      <section class="projects">
-          <p class="under-construction"><i class="fas fa-lock"></i> Under construction</p>
-      </section>
-      <footer><p>&copy; 2019. Designed by Victor Bruce</p></footer>
+    <nav id="topnav" class="topnav">
+      <a href="index.html">Browns' Consultancy</a>
+      <a href="index.html">Home</a> <a href="projects.html">Projects</a
+      ><a href="about.html">About</a><a href="contact-us.html">Contact</a>
+      <a href="javascript:void(0)" class="icon" onclick="responsiveNav()"><i class="fas fa-bars"></i></a>
+    </nav>
+    <section class="projects">
+      <p class="under-construction">
+        <i class="fas fa-lock"></i> Under construction
+      </p>
+    </section>
+    <footer><p>&copy; 2019. Designed by Victor Bruce</p></footer>
+    <script src="js/responsiveNav.js"></script>
   </body>
 </html>
